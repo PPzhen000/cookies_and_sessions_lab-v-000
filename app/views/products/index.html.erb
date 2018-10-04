@@ -1,8 +1,10 @@
-<ul>
-  <%= cart.each do |product| %>
-    <li><%= product %></li>
-  <% end %>
-</ul>
+<% if !cart.nil? %> 
+  <ul>
+    <%= cart.each do |product| %>
+      <li><%= product %></li>
+    <% end %>
+  </ul>
+<% end %> 
 
 <%= form_tag ({controller: 'products',
     action: 'add',
