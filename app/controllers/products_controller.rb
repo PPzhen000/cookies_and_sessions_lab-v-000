@@ -1,1 +1,7 @@
-class ProductsController << 
+class ProductsController < ApplicationController
+  
+  def index 
+    
+  end 
+  
+end 
